@@ -6,9 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animations</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hello.css">
     <link rel="icon" href="media/animate.png">
 </head>
 <body>
     
+<header>
+    <div>
+        <nav>
+            <ul class="nav-ul">
+                <li class="nav-li"><a class="nav-li-a" href="Happy-New-Year.html">Happy New Year!</a></li>
+                <li class="nav-li"><a class="nav-li-a" href="wroom-wroom.html">Wroom-Wroom!</a></li>
+                <li class="nav-li"><a class="nav-li-a" href="Sun-and-Moon.html">Sun and Moon (GEO)</a></li>
+                <li class="nav-li"><a class="nav-li-a" href="bonus.html">Wicked Game <small>(Bonus|Not an animation)</small></a></li>
+            </ul>
+        </nav>
+    </div>  
+</header>
+
+<main>
+    <div class="little-chicken">
+        <div class="head">
+            <div class="pom-pom">0</div>
+            <div class="face">
+                <div class="eye-left">
+                    <div class="sparkle"></div>
+                </div>
+                <div class="cheek cheek-left"></div>
+                <div class="eye-right">
+                    <div class="sparkle"></div>
+                </div>
+                <div class="cheek cheek-right"></div>
+                <div class="nose"></div>
+                <span class="nose-animation"></span>
+                <span class="hello-animation">hello!</span>
+            </div>
+        </div>
+        <div class="adjustment">
+            <div class="hand-left">
+                <div class="hand-left-1">
+                <div class="hand-finger hand-finger-1-left"></div>
+                <div class="hand-finger hand-finger-2-left"></div>
+                <div class="hand-finger hand-finger-3-left"></div>
+                <div class="hand-finger hand-finger-4-left"></div>
+                </div>
+            </div>
+            <div class="body"></div>
+            <div class="hand-right">
+                <div class="hand-right-1">
+                <div class="hand-finger hand-finger-1-right"></div>
+                <div class="hand-finger hand-finger-2-right"></div>
+                <div class="hand-finger hand-finger-3-right"></div>
+                <div class="hand-finger hand-finger-4-right"></div>
+                </div>
+            </div>
+            <div class="leg">
+                <div class="stick stick-left"></div>
+                <div class="finger finger-1-left"><span class="nail"></span></div>
+                <div class="finger finger-2-left"><span class="nail"></span></div>
+                <div class="finger finger-3-left"><span class="nail"></span></div>
+                <div class="stick stick-right"></div>
+                <div class="finger finger-1-right"><span class="nail"></span></div>
+                <div class="finger finger-2-right"><span class="nail"></span></div>
+                <div class="finger finger-3-right"><span class="nail"></span></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-div">
+        <div class="footer-div-child">
+            <a href="https://github.com/leoguda" target="_blank">
+                <img class="footer-icons-github" src="media/github.svg" alt="github svg" onmouseover="hover()" onmouseout="noHover()">
+            </a> 
+            <a href="https://www.facebook.com/profile.php?id=100027512271124" target="_blank">
+                <img class="footer-icons-fb" src="media/facebook.svg" alt="github svg" onmouseover="hover()" onmouseout="noHover()">
+            </a>                
+            <a href="https://www.linkedin.com/in/levan-gudavadze-b45b3b276/" target="_blank">
+                <img class="footer-icons-linkedin" src="media/linkedin-in.svg" alt="github svg" onmouseover="hover()" onmouseout="noHover()">
+            </a>
+        </div>
+    </div>
+    <script>
+        // Start - footer svg hover
+        function hover(){    
+            event.currentTarget.classList.add("footer-svg");
+        }
+        function noHover(){
+            event.currentTarget.classList.remove("footer-svg");
+        }
+        // End - footer svg hover
+    </script>
+</footer>
 </body>
 </html>

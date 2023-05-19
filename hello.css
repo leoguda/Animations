@@ -1,0 +1,326 @@
+/* Start - ANIMATION */
+.little-chicken {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7em;
+    background-color: rgba(253, 94, 31, 0.648);
+    height:600px;
+}
+:root{
+    --background-color: rgb(253, 205, 59);
+}
+.pom-pom {
+    position: absolute;
+    margin-left:30px;
+    transform:rotate(15deg);
+    border-left: 20px solid rgb(241, 160, 173);
+    border-right: 20px solid rgb(241, 160, 173);
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-radius: 10px;
+    color:darkorchid;
+    font-weight: bold;
+    z-index: 3;
+    box-shadow: inset 0 0 5px rgb(224, 164, 254);
+}
+.head{
+    display: flex;
+    justify-content: center; 
+}
+.face{    
+    width:110px;
+    height:110px;
+    background-color: var(--background-color);
+    border-radius:47%;
+    box-shadow: 0 0.5px 1px darkgoldenrod;
+    z-index: 2;
+}
+.eye-left,.eye-right {
+    margin-top:55px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: black;
+    width:7px;
+    height:7px;
+}
+.eye-left{
+    margin-left:20px;
+}
+.eye-right{
+    float:right;
+    margin-right:20px;
+}
+.sparkle{
+    width:3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50px;;
+}
+.nose{
+    width: 0; 
+    height: 0; 
+    margin:auto;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 15px solid orangered;
+    border-radius: 2px;
+}
+.nose-animation{
+    position: absolute;
+    margin-top:-25px;
+    margin-left: 46px;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-top: 14px solid rgba(167, 57, 17, 0.216);
+    border-radius: 2px;
+    animation-name: nose;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes nose{
+12.5%,37.5%,62.5%{
+    border-top: 14px solid rgba(167, 57, 17, 0.216);
+}
+25%,50%{
+    border-top: 20px solid rgba(167, 57, 17, 0.443);
+}
+}
+.hello-animation{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+    margin-left: 50px;
+    color:black;
+    font-size: 0;
+    font-weight: bolder;
+    font-family: 'Shalimar', cursive;
+    width:0;
+    height: 0;
+    background-image: url(https://static.thenounproject.com/png/27709-200.png);
+    background-size: cover;
+    transform:rotate(360deg);
+    animation-name:hello;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+@keyframes hello {
+    12.5%,37.5%,62.5%{
+        margin-top:-120px;
+        margin-left: 110px;
+        color:black;
+        font-size: 20px;
+        transform:rotate(0deg);
+        width: 80px;
+        height: 80px;
+    }
+    25%,50%{
+        margin-top:-119px;
+        margin-left: 109px;
+        color:black;
+        font-size: 22px;
+        transform:rotate(0deg);
+    }
+}
+.cheek {
+    background-color:rgb(246, 6, 6);
+    width:15px;
+    height:10px;
+    border-radius:33px 32px 50px 50px;    
+    background-color: lightcoral;
+}
+.cheek-left{
+    position: absolute;
+    margin-left: 13px;
+    transform:rotate(15deg);
+}   
+.cheek-right{
+    position: absolute;
+    margin-left: 81px;
+    rotate: -15deg;
+}
+/* ADJUSTMENT */
+.adjustment{
+    display: flex;
+    justify-content: center; 
+    margin-left: -210px;
+    background-color: rebeccapurple;
+}
+/* ADJUSTMENT */
+.hand-left,.hand-right{
+    position: absolute;
+    background-color: var(--background-color);
+    width: 40px;
+    height: 60px;
+    margin-left:175px;
+    border-radius: 40%;
+    transform:rotate(45deg);
+    z-index: 2;
+    box-shadow: 0.5px 1px 2px darkgoldenrod;
+}
+.hand-right{
+    margin-top:-30px;
+    margin-left:295px;
+    z-index: 0;
+    animation-name:hand-shake;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+@keyframes hand-shake {
+    13.5%,38.5%,63.5%{
+        transform:rotate(35deg);
+}
+    26%,51%{
+        transform:rotate(55deg);
+}
+    
+}
+.hand-left-1,.hand-right-1{
+    display: flex;
+}
+.hand-finger{
+    position: absolute;
+    background-color: var(--background-color);
+    width: 10px;
+    height: 15px;  
+}
+.hand-finger-1-left,.hand-finger-2-left,.hand-finger-3-left,.hand-finger-4-left{
+    margin-top: 43px;
+    width: 11px;
+    border-radius: 10px 0 50px 0;
+    box-shadow: 0 0.5px 1px darkgoldenrod;
+}
+.hand-finger-1-right,.hand-finger-2-right,.hand-finger-3-right,.hand-finger-4-right{
+    width: 11px;
+    border-radius: 0 50px 0 10px;
+    box-shadow: 0 0.5px 1px darkgoldenrod;
+    z-index: 0;
+}
+.hand-finger-1-left{
+    margin-left: -4px;
+    height: 20px;
+    transform:rotate(28deg);
+}
+.hand-finger-2-left{
+    margin-left: 4px;
+    height: 25px;
+    transform:rotate(26deg);
+}
+.hand-finger-3-left{
+    margin-left: 15px;
+    height: 24px;
+    transform:rotate(22deg);
+}
+.hand-finger-4-left{
+    margin-left: 25px;
+    height: 21px;
+    transform:rotate(18deg);
+}
+.hand-finger-1-right{
+    margin-top:-3px;
+    margin-left: -4px;
+    height: 20px;
+    transform:rotate(-25deg);
+}
+.hand-finger-2-right{
+    margin-top:-10px;
+    margin-left: 4px;
+    height: 25px;
+    transform:rotate(-15deg);
+}
+.hand-finger-3-right{
+    margin-top:-10px;
+    margin-left: 15px;
+    height: 24px;
+    transform:rotate(-13deg);
+}
+.hand-finger-4-right{
+    margin-top:-7px;
+    margin-left: 25px;
+    height: 21px;
+    transform:rotate(-10deg);
+}
+.body{
+    position: absolute;
+    background-color: var(--background-color);
+    margin-top:-19px;
+    margin-left: 189px;
+    width:120px;
+    height:105px;
+    border-radius: 45%;
+    z-index: 1;
+}
+.body::after{
+    content: "";
+    position: absolute;
+    width:120px;
+    height:105px;
+    border-radius: 45%;
+    box-shadow: 0 0.5px 1px darkgoldenrod;
+}
+.leg{
+    position:absolute;
+    margin-top: 85px;
+    margin-left: 190px;
+    width: 60px;
+    height: 60px;
+}
+.stick{
+    position: inherit;
+    width: 5px;
+    height: 20px;
+    background-color: brown;
+}
+.stick-left{
+    margin-top: 0;
+    margin-left: 18px;
+}
+.stick-right{
+    margin-top: 0;
+    margin-left: 42px;
+}
+.finger{
+    position: inherit;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 15px;
+    width:4px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: brown;
+}
+.finger-1-left{
+    transform:rotate(45deg);
+    margin-left: 14px;
+}
+.finger-2-left{
+    transform:rotate(0deg);
+    margin-left: 18.5px;
+}
+.finger-3-left{
+    transform:rotate(-45deg);
+    margin-left: 23px;
+}
+.finger-1-right{
+    transform:rotate(45deg);
+    margin-left: 38px;
+}
+.finger-2-right{
+    transform:rotate(0deg);
+    margin-left: 42.5px;
+}
+.finger-3-right{
+    transform:rotate(-45deg);
+    margin-left: 47px;
+}
+.nail{
+    border-radius: 35%;
+    width:3px;
+    height: 8px;
+    background-color: red;
+}
+   /* Start - ANIMATION */
