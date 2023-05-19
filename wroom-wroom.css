@@ -21,7 +21,6 @@ main{
     align-items: center;
     background-color: antiquewhite;
     width:95vw;
-    height: 95vh;
     padding: 3em 0;
 }
 fieldset{
@@ -70,7 +69,6 @@ input[type="radio"]:hover{
     width: 45rem;
     height: 35rem;
     background-color: rgb(220, 255, 194);
-    /* margin: auto; */
     border: 0.2rem solid green;
 }
 .windows-corps{
@@ -245,6 +243,9 @@ input[type="radio"]:hover{
 }
 
 @media only screen and (max-width:800px){
+    main{
+        height: 1200px;
+    }
     fieldset{
         margin-top: 0;
         margin-bottom: 0;
