@@ -1,15 +1,19 @@
-header *{
-    font-family: fantasy;
-}
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+Header{
+    background-color: #948b8bb0;
+    margin-top: -1em;
+    margin-bottom: -1em;
+}
+header *{
+    font-family: fantasy;
+}
 /* Start - Header */
 Header > div nav{
-    background-color: #948b8bb0;
+    /* background-color: #948b8bb0; */
 }
 .nav-ul{
     display: flex;
