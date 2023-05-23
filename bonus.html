@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animations</title>
+    <title>Wicked Game</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="happy-new-year.css">
-    <link rel="icon" href="media/animate.png">
+    <link rel="stylesheet" href="wicked-game.css">
+    <link rel="icon" href="media/logo.png">
 </head>
 <body>
     
@@ -26,6 +26,23 @@
 
 
 <main>
+    <form>
+        <p>Try to guess the random number!</p>
+        <p>choose number from 0 and 10</p>
+        <p>out of 3 chances you've got left: <span id="chance">3</span></p>
+        <input id="consumerChoice" type="number" required min="0" max="10">
+        <button type="button" id="check">Check</button>
+        <br>
+        <p id="randomNumber-p">Random number is: <span id="randomNumber"></span></p>
+        <p id="win">You are winner!
+            <a class="a-link" href="index.html"> <span class="link">try again</span></a>
+        </p>
+        <p id="incorrect"> Try again.</p>
+        <p id="lose">Game Over.
+            <a class="a-link" href="bonus.html"> <span class="link">try again</span></a>
+        </p>
+        <br>
+    </form>
 </main>
 
 <footer>
@@ -51,6 +68,46 @@
             event.currentTarget.classList.remove("footer-svg");
         }
         // End - footer svg hover
+
+
+        // Start - main - game logic
+
+        let randomNum=document.getElementById("randomNumber").innerHTML=Math.floor(Math.random()*11);
+        let xNumber=document.getElementById("consumerChoice");
+        let win=document.getElementById("win");
+        let lose=document.getElementById("lose");
+        let incorrect=document.getElementById("incorrect");
+        let one=document.getElementById("chance");
+        let randomNumP=document.getElementById("randomNumber-p");
+        let check=document.getElementById("check");
+        let attempts=3;
+
+        function game(){
+            if(+xNumber.value === randomNum){
+                win.style.display="block";
+                incorrect.style.display="none";
+                lose.style.display="none";
+                check.style.display="none";
+                attempts=3;
+            }else{
+                win.style.display="none";
+                incorrect.style.display="block";
+                lose.style.display="none";
+                attempts--;
+                one.innerHTML=attempts;
+            }
+            if(attempts === 0){
+                win.style.display="none";
+                incorrect.style.display="none";
+                lose.style.display="flex";
+                check.style.display="none";
+                randomNumP.style.color="white";
+                randomNumP.style.backgroundColor="black";
+            }
+        }
+        check.addEventListener("click",game);
+        // End - main - game logic
+
     </script>
 </footer>
 </body>
