@@ -38,7 +38,7 @@ Header > div nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15em;
+    height: 10em;
     background-color: #343a40;    
 }
 .footer-div a{
@@ -82,6 +82,10 @@ Header > div nav{
     .footer-div-child{
         display: flex;
         flex-direction: column;
+    }
+    .footer-div a{
+        text-decoration: none;
+        margin: 0em;
     }
 }
 @media only screen and (max-width:400px){

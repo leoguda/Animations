@@ -1,0 +1,1112 @@
+.hidden-gem{
+    display: none;
+}
+.test{
+    width: 100%;
+    height: 930px;
+    background-color: rgb(14, 14, 56);
+}
+.fire-box{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 742px 0 0 379px;
+    border: 1px solid;  
+    z-index: 1;  
+}
+.fire-box-top{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: 760px 0 0 380px;
+    z-index: 1;
+}
+.fire-box-bottom{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 795px 0 0 380px;
+    z-index: 1;
+}
+.fire-box-shadow{
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(17, 17, 17, 0.511);
+    margin: 805px 0 0 379px;
+    z-index: 1;
+}
+.test1{
+    position: absolute;
+    margin: 770px 0 0 400px;
+    width: 10px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    animation-name: first-sparkle;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    z-index: 1;
+}
+
+@keyframes first-sparkle{
+    0%{        
+        box-shadow: 0 0 0;
+        background-color: transparent;
+    }
+    4%{        
+        box-shadow: 0 0 0;
+        background-color: transparent;
+    }
+    5%{        
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+        background-color: yellow;
+    }
+    40%{
+        transform: rotate(15deg);
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+        background-color: yellow;
+ 
+    }
+    41%{
+        box-shadow: 0 0 0;   
+        background-color: transparent;
+    }
+    58%{
+        margin:300px 0 0 470px;
+
+    }
+    100%{
+        background-color: transparent;
+        box-shadow: 0 0 0;   
+    }
+}
+
+.splash1{
+    position: absolute;
+    margin:320px 0 0 460px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation-name: big-splash1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes big-splash1{
+    0%{
+        background-color: transparent;
+    }
+    38%{
+        background-color: transparent;
+    }
+    39%{
+        transform: scale(1);
+        background-color: rgba(245, 245, 153, 0.48);
+    }
+    61%{
+        transform: scale(34);
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+.splash2{
+    position: absolute;
+    margin:320px 0 0 460px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation-name: big-splash2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes big-splash2{
+    0%{
+        background-color: transparent;
+    }
+    41%{
+        background-color: transparent;
+    }
+    43%{
+        transform: scale(1);
+        background-color: rgba(245, 245, 149, 0.377);
+    }
+    61%{
+        transform: scale(14);
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+.splash3{
+    position: absolute;
+    margin:320px 0 0 460px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation-name: big-splash3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes big-splash3{
+    0%{
+        background-color: transparent;
+    }
+    40%{
+        background-color: transparent;
+    }
+    41%{
+        transform: scale(1);
+        background-color: rgba(235, 235, 154, 0.518);
+    }
+    61%{
+        transform: scale(24);
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+
+.fw{
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 300px 0 0 470px;
+}
+
+.fw1{
+    margin: 300px 0 0 470px;
+    animation-name: fire1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes fire1{
+0%{
+    background-color: transparent;
+    box-shadow: 0 0 0;
+}
+40%{
+    background-color: transparent;
+    box-shadow: 0 0 0;
+}
+41%{
+    margin: 300px 0 0 470px;
+
+    background-color: yellow;
+    box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+
+}
+60%{
+    transform: rotate(-45deg);
+    margin: 100px 0 0 50px;
+    background-color: yellow;
+    box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+}
+61%{
+    box-shadow: 0 0 0;   
+    background-color: transparent;
+}
+100%{
+    background-color: transparent;
+    box-shadow: 0 0 0;   
+}
+}
+
+.fw2{
+    margin: 300px 0 0 470px;
+    animation-name: fire2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes fire2{
+    0%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    40%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    41%{
+        margin: 300px 0 0 470px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    
+    }
+    60%{
+        transform: rotate(10deg);
+        margin: 100px 0 0 490px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    }
+    61%{
+        box-shadow: 0 0 0;   
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+        box-shadow: 0 0 0;   
+    }
+}
+
+.fw3{
+    margin: 300px 0 0 470px;
+    animation-name: fire3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes fire3{
+    0%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    40%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    41%{
+        margin: 300px 0 0 470px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    
+    }
+    60%{
+        transform: rotate(45deg);
+        margin: 50px 0 0 750px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    }
+    61%{
+        box-shadow: 0 0 0;   
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+        box-shadow: 0 0 0;   
+    }
+}
+
+.fw4{
+    margin: 300px 0 0 470px;
+    animation-name: fire4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes fire4{
+    0%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    40%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    41%{
+        margin: 300px 0 0 470px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    
+    }
+    60%{
+        transform: rotate(-15deg);
+        margin: 180px 0 0 370px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    }
+    61%{
+        box-shadow: 0 0 0;   
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+        box-shadow: 0 0 0;   
+    }
+}
+
+.fw5{
+    margin: 300px 0 0 470px;
+    animation-name: fire5;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes fire5{
+    0%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    40%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    41%{
+        margin: 300px 0 0 470px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    }
+    60%{        
+        transform: rotate(-20deg);
+        margin: 400px 0 0 550px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    }
+    61%{
+        box-shadow: 0 0 0;   
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+        box-shadow: 0 0 0;   
+    }
+}
+
+.fw6{
+    margin: 300px 0 0 470px;
+    animation-name: fire6;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+}
+@keyframes fire6{
+    0%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    40%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    41%{
+        margin: 300px 0 0 470px;
+    
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    
+    }
+    60%{
+        transform: rotate(40deg);
+        margin: 500px 0 0 250px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    }
+    61%{
+        box-shadow: 0 0 0;   
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+        box-shadow: 0 0 0;   
+    }
+}
+
+.fw7{
+    margin: 300px 0 0 470px;
+    animation-name: fire7;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+}
+@keyframes fire7{
+    0%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    40%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    41%{
+        margin: 300px 0 0 470px;
+    
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    
+    }
+    60%{
+        transform: rotate(-30deg);
+        margin: 600px 0 0 650px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    }
+    61%{
+        box-shadow: 0 0 0;   
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+        box-shadow: 0 0 0;   
+    }
+}
+
+.fw8{
+    margin: 300px 0 0 470px;
+    animation-name: fire8;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+}
+@keyframes fire8{
+    0%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    40%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    41%{
+        margin: 300px 0 0 470px;
+    
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    
+    }
+    60%{
+        transform: rotate(-20deg);
+        margin: 500px 0 0 550px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    }
+    61%{
+        box-shadow: 0 0 0;   
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+        box-shadow: 0 0 0;   
+    }
+}
+
+.fw9{
+    margin: 300px 0 0 470px;
+    animation-name: fire9;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+}
+@keyframes fire9{
+    0%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    40%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    41%{
+        margin: 300px 0 0 470px;
+    
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    
+    }
+    60%{
+        transform: rotate(30deg);
+        margin: 200px 0 0 550px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    }
+    61%{
+        box-shadow: 0 0 0;   
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+        box-shadow: 0 0 0;   
+    }
+}
+
+.fw10{
+    margin: 300px 0 0 470px;
+    animation-name: fire10;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+}
+@keyframes fire10{
+    0%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    40%{
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+    41%{
+        margin: 300px 0 0 470px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    }
+    60%{
+        transform: rotate(40deg);
+        margin: 150px 0 0 670px;
+        background-color: yellow;
+        box-shadow: 0 0 20px yellowgreen, 0 0 14px yellowgreen;
+    }
+    61%{
+        box-shadow: 0 0 0;   
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+        box-shadow: 0 0 0;   
+    }
+}
+/* here starts new years tree's style*/
+
+/* start- tree container */
+.new-years-tree{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    margin: -660px 0 0 600px;
+}
+/* end- tree container */
+
+/* start- tree color */
+.tree-0{
+    position: absolute;
+    border-bottom: solid 1px gray;
+    background-color: rgb(1, 45, 1);
+    z-index: 1;
+}
+.tree-01{
+    position: absolute;
+    border-right: solid 1px gray; 
+    background-color: rgb(1, 45, 1);
+}
+/* end- tree color */
+
+/* start- peak of tree */
+
+.star-on-tree{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: solid 50px rgb(252, 211, 29);
+    border-right: solid 15px transparent;
+    border-bottom: solid 0px transparent;
+    border-left: solid 15px transparent;
+    z-index: 2;
+}
+.star-on-tree0{
+    position: absolute;
+    margin: 125px 0 0 240px;
+    width: 30px;
+    height: 40px;
+    background-color: rgb(252, 211, 29);
+}
+.star-on-tree1{
+    margin: 140px 0 0 261px;
+    transform: rotate(-45deg);
+
+}
+.star-on-tree2{
+    margin: 140px 0 0 220px;
+    transform: rotate(45deg);
+}
+.star-on-tree3{
+    margin: 105px 0 0 211px;
+    transform: rotate(110deg);
+}
+.star-on-tree4{
+    margin: 105px 0 0 270px;
+    transform: rotate(-110deg);
+}
+.star-on-tree5{
+    margin: 75px 0 0 240px;
+    transform: rotate(180deg);
+}
+
+.sparkle-of-star{
+    position: absolute;
+    margin: 125px 0 0 235px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation-name: spakle-star;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spakle-star{
+    0%{
+        box-shadow: 0 0 60px yellow;
+
+    }
+    25%{
+        box-shadow: 0 0 100px yellow,0 0 90px yellow,0 0 80px yellow,0 0 60px yellow,0 0 40px yellow,0 0 20px yellow,0 0 10px yellow;
+    }
+    50%{
+        box-shadow: 0 0 60px yellow;
+
+    }
+    75%{
+        box-shadow: 0 0 100px yellow,0 0 90px yellow,0 0 80px yellow,0 0 60px yellow,0 0 40px yellow,0 0 20px yellow,0 0 10px yellow;
+
+    }
+    100%{
+        box-shadow: 0 0 60px yellow;
+    }
+    
+}
+.tree-00{
+    width:68px;
+    height:68px ;
+    margin: 168px 0 0 221px;
+    transform: rotate(45deg);
+}
+/* end- peak of tree */
+
+ /* start- left side of tree */
+.tree-1{
+    width:30px;
+    height:30px ;
+    margin: 200px 0 0 200px;
+    transform: rotate(45deg);
+}
+.tree-2{
+    width:60px;
+    height:60px ;
+    margin: 220px 0 0 175px;
+    transform: rotate(45deg);
+}
+.tree-3{
+    width:90px;
+    height:90px ;
+    margin: 245px 0 0 150px;
+    transform: rotate(45deg);
+}
+.tree-4{
+    width:120px;
+    height:120px ;
+    margin: 275px 0 0 125px;
+    transform: rotate(45deg);
+}
+.tree-5{
+    width:150px;
+    height:150px ;
+    margin: 310px 0 0 100px;
+    transform: rotate(45deg);
+}
+.tree-6{
+    width:180px;
+    height:180px;
+    margin: 350px 0 0 75px;
+    transform: rotate(45deg);
+}
+ /* end- left side of tree */
+
+ /* start- center of tree */
+.tree-7{
+    width:80px;
+    height:30px;
+    margin: 207px 0 0 215.5px;
+}
+.tree-8{
+    width:100px;
+    height:56px;
+    margin: 237.5px 0 0 205.5px;
+}
+.tree-9{
+    width:120px;
+    height:60px;
+    margin: 294.5px 0 0 195.5px;
+}
+.tree-10{
+    width:140px;
+    height:65px;
+    margin: 355.5px 0 0 185.5px;
+}
+.tree-11{
+    width:160px;
+    height:70px;
+    margin: 421.5px 0 0 175.5px;
+}
+.tree-12{
+    width:180px;
+    height:75px;
+    margin: 492.5px 0 0 165px;
+}
+ /* end- center of tree */
+
+
+ /* start- right side of tree */
+.tree-13{
+    width:30px;
+    height:30px ;
+    margin: 200.5px 0 0 280px;
+    transform: rotate(45deg);
+}
+.tree-14{
+    width:60px;
+    height:60px ;
+    margin: 220.5px 0 0 275px;
+    transform: rotate(45deg);
+}
+.tree-15{
+    width:90px;
+    height:90px ;
+    margin: 245.5px 0 0 270px;
+    transform: rotate(45deg);
+}
+.tree-16{
+    width:120px;
+    height:120px ;
+    margin: 275.5px 0 0 265px;
+    transform: rotate(45deg);
+}
+.tree-17{
+    width:150px;
+    height:150px ;
+    margin: 310.5px 0 0 260px;
+    transform: rotate(45deg);
+}
+.tree-18{
+    width:180px;
+    height:180px;
+    margin: 350px 0 0 255px;
+    transform: rotate(45deg);
+}
+ /* end- left side of tree */
+
+/* here ends new years tree's style*/
+.snow{
+    position: absolute;
+    height: 138px;
+    /* bottom: 0; */
+    margin-top: 800px;
+    width: 100%;
+    background-color: rgb(197, 197, 197);
+}
+
+.snowman{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    margin: -460px 0 0 1200px;
+}
+
+.head{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 47%;
+    background-color: white;
+    margin: 35px 0 0 100px;
+    border-bottom: 0.5px solid black;
+    z-index: 3;
+}
+.eye{
+    width: 11px;
+    height: 17px;
+    color: transparent;
+    background-color: #111;
+    border-radius: 50%;
+    margin: 30px 0 0 25px;
+}
+
+.eye::after{
+    content: "O";
+    color: transparent;
+    width: 15px;
+    height: 15px;
+    background-color: #111;
+    border-radius: 50%;
+    margin-left: 23px;
+}
+.carrot{
+    margin: 12px 0 0 11px;
+    transform: rotate(155deg);
+    width: 10px;
+    height: 3px;
+    border-left: 29px solid orangered;
+    border-right: 0px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+}
+.smile1{
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    border-radius: 40%;
+    background-color: #111;
+    margin:6px 0 0 22px;
+    transform: rotate(30deg);
+}
+.smile2{
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    border-radius: 40%;
+    background-color: #111;
+    margin:10px 0 0 42px;
+}
+.smile3{
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    border-radius: 40%;
+    background-color: #111;
+    margin:6px 0 0 62px;
+    transform: rotate(-30deg);
+}
+
+.stomach{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 47%;
+    background-color: white;
+    margin: 125px 0 0 92px;
+    border-bottom: 0.5px solid black;
+    z-index: 2;
+}
+
+.hand1{
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background-color: #111;
+    margin: 35px 0 0 -32px;
+    transform: rotate(28deg);
+    animation-name: hello-left;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.finger1-left{
+    position: absolute;
+    width: 12px;
+    height: 4px;
+    background-color: #111;
+    margin: 0 0 0 -2px;
+}
+.finger2-left{
+    position: absolute;
+    width: 12px;
+    height: 4px;
+    background-color: #111;
+    margin: -5px 0 0 0;
+    transform: rotate(45deg);
+}
+.finger3-left{
+    position: absolute;
+    width: 12px;
+    height: 4px;
+    background-color: #111;
+    margin: 5px 0 0 0;
+    transform: rotate(-40deg);
+}
+
+@keyframes hello-left{
+    13.5%,38.5%,63.5%{
+        transform:rotate(31deg);
+}
+    26%,51%{
+        transform:rotate(25deg);
+}
+}
+
+.hand2{
+    position: absolute;
+    width: 55px;
+    height: 4px;
+    background-color: #111;
+    margin: 35px 0 0 98px;
+    transform: rotate(-28deg);
+    animation-name: hello-right;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    }
+.finger1-right{
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    background-color: #111;
+    margin: 0 0 0 55px;
+}
+.finger2-right{
+    position: absolute;
+    width: 12px;
+    height: 4px;
+    background-color: #111;
+    margin: -5px 0 0 55px;
+    transform: rotate(-40deg);
+}
+.finger3-right{
+    position: absolute;
+    width: 12px;
+    height: 4px;
+    background-color: #111;
+    margin: 5px 0 0 55px;
+    transform: rotate(45deg);
+}
+.circle{
+    margin: 43px 0 0 98px;
+    width: 7px;
+    height: 12px;
+    border-radius: 45%;
+    background-color: #111;
+}
+
+@keyframes hello-right{
+    13.5%,38.5%,63.5%{
+        transform:rotate(-32deg);
+}
+    26%,51%{
+        transform:rotate(-24deg);
+}
+}
+
+.button{
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    background-color: #111;
+    border-radius: 50%;
+}
+.button1{
+    transform: rotate(9deg);
+    margin: -15px 0 0 30px;
+}
+.button2{
+    transform: rotate(0deg);
+    margin: 10px 0 0 27px;
+}
+.button3{
+    transform: rotate(-9deg);
+    margin: 35px 0 0 30px;
+}
+
+.lower-body{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 47%;
+    background-color: white;
+    margin: 230px 0 0 80px;
+    border-bottom: 0.5px solid black;
+    z-index: 1;
+}
+.shadow{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(17, 17, 17, 0.511);
+    margin: 355px 0 0 95px;
+    z-index: 0;
+}
+
+@media only screen and (max-width:1600px){
+    .new-years-tree{
+        margin: -660px 0 0 400px;
+    }
+    .snowman{
+        margin: -460px 0 0 900px;
+    }
+}
+@media only screen and (max-width:1200px){
+    .test-div{
+        margin-left: -150px;
+    }
+    .new-years-tree{
+        margin: -660px 0 0 300px;
+    }
+    .snowman{
+        margin: -460px 0 0 700px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .test-div{
+        margin-left: -300px;
+    }
+    .new-years-tree{
+        margin: -660px 0 0 150px;
+    }
+    .snowman{
+        margin: -460px 0 0 550px;
+    }
+}
+@media only screen and (max-width:900px){
+    .test-div{
+        margin-left: -350px;
+    }
+    .new-years-tree{
+        margin: -660px 0 0 100px;
+    }
+    .snowman{
+        margin: -460px 0 0 400px;
+    }
+}
+@media only screen and (max-width:701px){
+    .test-div{
+        margin-left: -350px;
+    }
+    .new-years-tree{
+        margin: -660px 0 0 0px;
+    }
+    .snowman{
+        margin: -460px 0 0 300px;
+    }
+}
+@media only screen and (max-width:635px){
+    .test-div{
+        margin-left: -370px;
+    }
+    .new-years-tree{
+        margin: -660px 0 0 -30px;
+    }
+    .snowman{
+        margin: -460px 0 0 200px;
+    }
+}
+@media only screen and (max-width:500px){
+    main{
+        height: 90vh;
+        background-color: whitesmoke;
+    }
+    .hidden-gem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hidden-gem h1{
+        font-size: 1.6em;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .test,.snow,.tree-and-snowman{
+        display: none;
+    }
+}
+@media only screen and (max-width:300px){
+    .hidden-gem h1{
+        font-size: 1.4em;
+    }
+}
