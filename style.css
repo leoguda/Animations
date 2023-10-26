@@ -12,9 +12,6 @@ header *{
     font-family: fantasy;
 }
 /* Start - Header */
-Header > div nav{
-    /* background-color: #948b8bb0; */
-}
 .nav-ul{
     display: flex;
     flex-wrap: wrap;
